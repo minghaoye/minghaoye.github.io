@@ -7,5 +7,10 @@ pipeline {
         sleep 12
       }
     }
+    stage('hjfsad') {
+      steps {
+        echo 'hsajbdga'
+      }
+    }
   }
 }
