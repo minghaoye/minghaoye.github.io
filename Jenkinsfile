@@ -7,9 +7,10 @@ pipeline {
           steps {
             echo '123'
             sleep 12
+            echo '123123123'
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             echo '123'
           }
