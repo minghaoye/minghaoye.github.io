@@ -7,5 +7,10 @@ pipeline {
         sleep 12
       }
     }
+    stage('name') {
+      steps {
+        echo 'name'
+      }
+    }
   }
 }
