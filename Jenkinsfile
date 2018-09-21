@@ -7,9 +7,18 @@ pipeline {
         sleep 12
       }
     }
-    stage('name') {
-      steps {
-        echo 'name'
+    stage('default') {
+      parallel {
+        stage('name') {
+          steps {
+            echo 'name'
+          }
+        }
+        stage('name') {
+          steps {
+            echo 'name'
+          }
+        }
       }
     }
   }
