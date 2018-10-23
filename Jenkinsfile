@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    dockerfile {
+      filename '123'
+    }
+
+  }
   stages {
     stage('error') {
       steps {
